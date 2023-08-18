@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.mapbox-directions-instructions {
+  overflow: auto !important;
+}
+
+div#geocoder-search {
+  width: 25em;
+}
+
+.marker {
+  font-size: 3em;
+  color: #bb2004;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Mapbox.css */
+.map .directions-control-container .directions-profile-switcher {
+  display: none; /* Hide the profile switcher (cycling and walking options) */
+}
+
+.map .directions-control-container .directions-route-traffic-toggle {
+  display: none; /* Hide the traffic toggle */
+}
+
+.map .directions-control-container .directions-step-instructions {
+  display: none; /* Hide the step-by-step instructions */
+}

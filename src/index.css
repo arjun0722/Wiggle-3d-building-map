@@ -1,13 +1,210 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.geocoder-pin-right {
+  display: none;
+}
+
+.directions-icon {
+  display: none;
+}
+
+/* Apply styles to text input fields in the Mapbox Directions control */
+
+.mapboxgl-ctrl-geocoder input {
+  /* Your styling properties here */
+
+  width: auto;
+
+  font-size: 14px !important;
+
+  padding: 5px 0px;
+
+  margin: 3px 0px;
+
+  width: 100%;
+
+  align-items: left;
+}
+
+.mapbox-directions-profile {
+  gap: 10px;
+
+  color: black;
+
+  margin-top: 10px;
+
+  background-color: white;
+
+  border: 1px solid;
+
+  border-radius: 10px;
+
+  padding: 5px 0px;
+
+  width: auto;
+}
+
+.mapbox-directions-profile-switcher label {
+  display: flex;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.mapbox-directions-route-summary {
+  background-color: black;
+
+  text-align: left;
+
+  padding-left: 4px;
+}
+
+.mapbox-directions-route-summary h1 {
+  display: inline-block;
+}
+
+.directions-control .directions-control-directions {
+  width: 300px !important;
+
+  margin-top: 4px;
+
+  background-color: rgb(16 16 16 / 70%);
+}
+
+.mapbox-directions-steps {
+  height: 300px;
+
+  overflow-y: scroll;
+
+  margin-top: 0;
+
+  list-style: none;
+
+  padding: 0;
+
+  padding-top: 4px;
+}
+
+.mapbox-directions-route-line {
+  stroke: #ffc0cb; /* Change this to your desired color */
+
+  stroke-width: 5px;
+}
+
+.suggestions {
+  border: 1px solid #eeeeee;
+
+  background: #abaaaa;
+
+  height: auto;
+
+  color: black;
+
+  overflow-y: scroll;
+
+  width: 300px;
+
+  float: right;
+
+  padding: 0px;
+
+  position: fixed;
+}
+
+.suggestions li {
+  list-style: none;
+}
+
+#map {
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.mapbox-directions-instructions {
+  overflow: auto !important;
+}
+
+div#geocoder-search {
+  width: 25em;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.marker {
+  background-image: url("icon.png");
+  background-size: cover;
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer; */
+
+  /* background-image: url(icon.png); */
+  background-color: silver;
+  background-size: cover;
+  border-style: solid;
+  border-color: gold;
+  border-width: 5px;
+  box-shadow: 0px 0px 5px 5px gold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pointerdes {
+  background-image: url("pointer.png");
+  background-size: cover;
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer; */
+
+  /* background-image: url(icon.png); */
+  background-color: silver;
+  background-size: cover;
+  border-style: solid;
+  border-color: gold;
+  /* border-width: 5px;
+  box-shadow: 0px 0px 5px 5px gold; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+}
+.mapbox-directions-step-maneuver{
+  color: whitesmoke;
+}
+.mapbox-directions-component {
+  color: whitesmoke;
+}
+.mapbox-directions-step-distance{
+  color: white;
 }
